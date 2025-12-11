@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Super Counter</title>
+</head>
+
+<body>
+
+  <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+
+  <div class="card">
+    <h1 class="heading">Counter</h1>
+    <p id="countervalue" class="counter">0</p>
+
+    <div class="btn-container">
+      <button class="btn neon-red" onclick="onDecrement()">DECREASE</button>
+      <button class="btn neon-yellow" onclick="onReset()">RESET</button>
+      <button class="btn neon-green" onclick="onIncrement()">INCREASE</button>
+    </div>
+  </div>
+
+  <audio id="click-sound" src="click.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
